@@ -1,0 +1,6 @@
+(setq inferior-lisp-program "/usr/ccl/lx86cl64")
+
+(defun hello-name ()
+  (interactive)
+  (insert "Hello Eric.")
+  )
