@@ -1,7 +1,7 @@
 (setq inferior-lisp-program "/usr/ccl/lx86cl64")
 
 (load "~/.emacs.d/eric.el")
-
+(load "~/.emacs.d/blog.el")
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
