@@ -9,7 +9,7 @@
 (defun new-post (title)
   (interactive "sBlog Post Title: ")
   (defvar title title)
-  (switch-to-buffer (concat (concat "/home/epl692/posts/" (concat (format-time-string "%Y-%m-%d-") (replace-regexp-in-string "[!@#$%^&*()_+\.]" "" (replace-regexp-in-string " " "-" title)))) ".md"))
+  (find-file (concat (concat "/home/epl692/posts/" (concat (format-time-string "%Y-%m-%d-") (replace-regexp-in-string "[!@#$%^&*()_+\.,<>:'`\\]" "" (replace-regexp-in-string " " "-" title)))) ".md"))
   (post-header title)
   )
 
